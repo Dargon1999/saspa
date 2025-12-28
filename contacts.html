@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>SASPA — Контакты</title>
+    <meta name="description" content="Контакты SASPA (GTA 5 RP)." />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="SASPA — главная">
+          <img class="brand-mark" src="/assets/logo.svg" alt="" />
+          <span class="brand-text">
+            <span class="brand-name">SASPA</span>
+            <span class="brand-sub">San Andreas State Prison Authority</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="/">Главная</a>
+          <a class="nav-link" href="/apply.html">Заявки</a>
+          <a class="nav-link" href="/charter.html">Устав</a>
+          <a class="nav-link" href="/leadership.html">Руководство</a>
+          <a class="nav-link" href="/divisions.html">Подразделения</a>
+          <a class="nav-link" href="/complaint.html">Жалоба</a>
+          <a class="nav-link is-active" href="/contacts.html">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button" type="button" data-action="toggle-theme" aria-label="Переключить тему">
+            <span class="icon" aria-hidden="true">◐</span>
+          </button>
+          <button class="icon-button" type="button" data-action="open-auth" aria-label="Войти">
+            <span class="icon" aria-hidden="true">⍟</span>
+          </button>
+          <button class="icon-button" type="button" data-action="logout" aria-label="Выйти" data-slot="logout" hidden>
+            <span class="icon" aria-hidden="true">⎋</span>
+          </button>
+          <button class="icon-button nav-toggle" type="button" data-action="toggle-nav" aria-label="Открыть меню">
+            <span class="icon" aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="page">
+      <section class="page-head">
+        <div class="container">
+          <h1 class="page-title">Контакты</h1>
+          <p class="page-lead" data-edit="contacts-lead">Замените на ваши реальные ссылки и каналы.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid cards" data-edit="contacts-cards">
+            <div class="card card-static">
+              <div class="card-title">Discord</div>
+              <div class="card-text">Основной канал связи и публикации объявлений.</div>
+              <div class="card-meta">
+                <a class="link" href="#" aria-label="Discord ссылка (заменить)">discord.gg/ВАШ_ИНВАЙТ</a>
+              </div>
+            </div>
+            <div class="card card-static">
+              <div class="card-title">Часы приёма</div>
+              <div class="card-text">Вопросы по заявкам и регламентам.</div>
+              <div class="card-meta">Пн–Пт: 19:00–22:00 MSK</div>
+            </div>
+            <div class="card card-static">
+              <div class="card-title">Регламент обращений</div>
+              <div class="card-text">Жалобы подаются только через форму с доказательствами.</div>
+              <div class="card-meta"><a class="link" href="/complaint.html">Открыть форму жалобы</a></div>
+            </div>
+            <div class="card card-static">
+              <div class="card-title">Создатель сайта</div>
+              <div class="card-text">Создатель сайта для SASPA: Sanya Dargon</div>
+              <div class="card-meta">Спец.связь: a4smoke • __akulenok</div>
+            </div>
+          </div>
+
+          <div class="panel section-gap" data-edit="contacts-panel">
+            <div class="panel-header">
+              <div class="panel-title">Подключение авто-отправки форм</div>
+              <div class="panel-sub">Опционально</div>
+            </div>
+            <div class="prose">
+              <p>
+                Сейчас формы работают в режиме “скопировать и отправить” (самый безопасный режим). Если у вас есть бот/вебхук —
+                пропишите endpoint в конфиге сайта, и заявки начнут уходить автоматически.
+              </p>
+              <p class="muted">Настройка делается в <span class="mono">assets/app.js</span> в блоке <span class="mono">CONFIG</span>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <img class="brand-mark" src="/assets/logo.svg" alt="" />
+            <div>
+              <div class="footer-title">SASPA</div>
+              <div class="footer-sub">GTA 5 RP • Официальный сайт</div>
+            </div>
+          </div>
+          <div class="footer-meta">© <span data-slot="year"></span> SASPA.</div>
+        </div>
+        <div class="footer-links">
+          <div>Порядок начинается с дисциплины.</div>
+          <div>Служим закону — держим режим.</div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="authDialog" aria-label="Вход">
+      <form method="dialog" class="dialog-card" data-form="auth">
+        <div class="dialog-head">
+          <div class="dialog-title">Вход</div>
+          <button class="icon-button" type="submit" aria-label="Закрыть">
+            <span aria-hidden="true">✕</span>
+          </button>
+        </div>
+        <p class="muted">Доступ к редактированию сайта на этом устройстве. По умолчанию: admin / admin.</p>
+        <label class="field">
+          <span class="field-label">Логин</span>
+          <input class="input" name="username" autocomplete="username" />
+        </label>
+        <label class="field">
+          <span class="field-label">Пароль</span>
+          <input class="input" name="password" type="password" autocomplete="current-password" />
+        </label>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel" type="submit">Закрыть</button>
+          <button class="button button-primary" data-action="auth-login" type="button">Войти</button>
+        </div>
+        <div class="notice" data-slot="auth-result" hidden></div>
+      </form>
+    </dialog>
+
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>

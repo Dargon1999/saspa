@@ -1,0 +1,45 @@
+<svg width="720" height="340" viewBox="0 0 720 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ФТ «Болингброук» — корпуса">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1222" />
+      <stop offset="1" stop-color="#121a2f" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(245,158,11,0.22)" />
+      <stop offset="1" stop-color="rgba(124,58,237,0.18)" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.55)" />
+    </filter>
+    <pattern id="bars" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M7 0V16" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#bg)" />
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#glow)" opacity="0.95" />
+
+  <path d="M0 252C98 224 198 232 280 252C362 272 450 302 546 292C642 282 690 254 720 240V340H0V252Z" fill="rgba(0,0,0,0.28)" />
+
+  <g filter="url(#shadow)">
+    <path
+      d="M90 252V128C90 115 101 104 114 104H392C405 104 416 115 416 128V252H90Z"
+      fill="rgba(0,0,0,0.32)"
+      stroke="rgba(255,255,255,0.28)"
+      stroke-width="2"
+    />
+    <path
+      d="M452 252V150C452 136 463 125 477 125H630C644 125 655 136 655 150V252H452Z"
+      fill="rgba(0,0,0,0.30)"
+      stroke="rgba(255,255,255,0.26)"
+      stroke-width="2"
+    />
+
+    <rect x="114" y="138" width="278" height="92" rx="12" fill="url(#bars)" opacity="0.9" />
+    <rect x="477" y="160" width="153" height="70" rx="12" fill="url(#bars)" opacity="0.9" />
+    <path d="M90 252H655" stroke="rgba(255,255,255,0.26)" stroke-width="2" />
+  </g>
+
+  <circle cx="136" cy="86" r="30" fill="rgba(255,255,255,0.07)" />
+  <circle cx="136" cy="86" r="16" fill="rgba(255,255,255,0.05)" />
+</svg>

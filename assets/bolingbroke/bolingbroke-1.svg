@@ -1,0 +1,58 @@
+<svg width="720" height="340" viewBox="0 0 720 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Федеральная тюрьма «Болингброук»">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220" />
+      <stop offset="1" stop-color="#111b2f" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(124,58,237,0.45)" />
+      <stop offset="1" stop-color="rgba(34,197,94,0.20)" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="rgba(0,0,0,0.55)" />
+    </filter>
+    <pattern id="bars" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M8 0V18" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#bg)" />
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#glow)" opacity="0.9" />
+
+  <path
+    d="M0 242C88 220 168 224 240 244C312 264 382 298 474 292C566 286 642 248 720 228V340H0V242Z"
+    fill="rgba(0,0,0,0.28)"
+  />
+
+  <g filter="url(#shadow)">
+    <path
+      d="M98 248V134C98 121 108 111 121 111H314C327 111 337 121 337 134V248H98Z"
+      fill="rgba(0,0,0,0.32)"
+      stroke="rgba(255,255,255,0.30)"
+      stroke-width="2"
+    />
+    <path
+      d="M385 248V150C385 136 396 125 410 125H609C623 125 634 136 634 150V248H385Z"
+      fill="rgba(0,0,0,0.30)"
+      stroke="rgba(255,255,255,0.28)"
+      stroke-width="2"
+    />
+
+    <path d="M98 248H634" stroke="rgba(255,255,255,0.30)" stroke-width="2" opacity="0.9" />
+
+    <g opacity="0.85">
+      <rect x="122" y="146" width="190" height="86" rx="12" fill="url(#bars)" />
+      <rect x="410" y="158" width="198" height="74" rx="12" fill="url(#bars)" />
+    </g>
+
+    <path
+      d="M350 248V176C350 165 359 156 370 156H376C387 156 396 165 396 176V248"
+      fill="rgba(0,0,0,0.25)"
+      stroke="rgba(255,255,255,0.30)"
+      stroke-width="2"
+    />
+  </g>
+
+  <circle cx="574" cy="78" r="34" fill="rgba(255,255,255,0.08)" />
+  <circle cx="574" cy="78" r="18" fill="rgba(255,255,255,0.06)" />
+</svg>

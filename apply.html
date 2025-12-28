@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>SASPA — Заявки</title>
+    <meta name="description" content="Подача заявок SASPA: вступление, перевод, восстановление." />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="SASPA — главная">
+          <img class="brand-mark" src="/assets/logo.svg" alt="" />
+          <span class="brand-text">
+            <span class="brand-name">SASPA</span>
+            <span class="brand-sub">San Andreas State Prison Authority</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="/">Главная</a>
+          <a class="nav-link is-active" href="/apply.html">Заявки</a>
+          <a class="nav-link" href="/charter.html">Устав</a>
+          <a class="nav-link" href="/leadership.html">Руководство</a>
+          <a class="nav-link" href="/divisions.html">Подразделения</a>
+          <a class="nav-link" href="/complaint.html">Жалоба</a>
+          <a class="nav-link" href="/contacts.html">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button" type="button" data-action="toggle-theme" aria-label="Переключить тему">
+            <span class="icon" aria-hidden="true">◐</span>
+          </button>
+          <button class="icon-button" type="button" data-action="open-auth" aria-label="Войти">
+            <span class="icon" aria-hidden="true">⍟</span>
+          </button>
+          <button class="icon-button" type="button" data-action="logout" aria-label="Выйти" data-slot="logout" hidden>
+            <span class="icon" aria-hidden="true">⎋</span>
+          </button>
+          <button class="icon-button nav-toggle" type="button" data-action="toggle-nav" aria-label="Открыть меню">
+            <span class="icon" aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="page">
+      <section class="page-head">
+        <div class="container">
+          <h1 class="page-title">Заявки</h1>
+          <p class="page-lead" data-edit="apply-lead">
+            Выберите тип заявки, заполните поля и отправьте. Черновик сохраняется автоматически, а итоговый текст можно скопировать в
+            Discord.
+          </p>
+          <div class="tabs" role="tablist" aria-label="Тип заявки">
+            <button class="tab is-active" role="tab" aria-selected="true" data-tab="join" id="joinTab">Вступление</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="transfer" id="transferTab">Перевод</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="reinstatement" id="reinstatementTab">
+              Восстановление
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid form-grid">
+            <div class="panel">
+              <div class="panel-header">
+                <div class="panel-title" data-slot="form-title">Заявка на вступление</div>
+                <div class="panel-sub">Заполните честно, без воды</div>
+              </div>
+
+              <form class="form" data-form="application">
+                <input type="hidden" name="type" value="join" />
+                <div class="grid fields">
+                  <label class="field">
+                    <span class="field-label">Имя Фамилия (IC)</span>
+                    <input class="input" name="icName" autocomplete="name" placeholder="например, Alex Morgan" required />
+                  </label>
+                  <label class="field">
+                    <span class="field-label">Статик / ID</span>
+                    <input class="input" name="staticId" inputmode="numeric" placeholder="например, 12345" required />
+                  </label>
+                  <label class="field">
+                    <span class="field-label">Возраст (IC)</span>
+                    <input class="input" name="icAge" inputmode="numeric" placeholder="например, 24" required />
+                  </label>
+                  <label class="field">
+                    <span class="field-label">Возраст (OOC)</span>
+                    <input class="input" name="oocAge" inputmode="numeric" placeholder="например, 18" required />
+                  </label>
+                  <label class="field field-wide">
+                    <span class="field-label">Discord</span>
+                    <input class="input" name="discord" placeholder="например, nickname#0000 или @nickname" required />
+                  </label>
+                  <label class="field field-wide">
+                    <span class="field-label">Почему SASPA?</span>
+                    <textarea class="textarea" name="motivation" rows="4" required></textarea>
+                  </label>
+                  <label class="field field-wide">
+                    <span class="field-label">Опыт в гос. структурах (если был)</span>
+                    <textarea class="textarea" name="experience" rows="4"></textarea>
+                  </label>
+                  <label class="field field-wide">
+                    <span class="field-label">Время в онлайне (MSK)</span>
+                    <input class="input" name="onlineTime" placeholder="например, 19:00–23:00" required />
+                  </label>
+                  <label class="field field-wide">
+                    <span class="field-label">Подтверждаю, что ознакомился с уставом</span>
+                    <div class="check">
+                      <input class="checkbox" type="checkbox" name="charterAck" required />
+                      <span class="check-text">Да, ознакомился и обязуюсь соблюдать</span>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button button-secondary" type="button" data-action="copy-application">Скопировать</button>
+                  <button class="button button-primary" type="submit">Отправить</button>
+                </div>
+
+                <div class="notice" data-slot="form-result" hidden></div>
+              </form>
+            </div>
+
+            <aside class="sidebar">
+              <div class="card card-compact">
+                <div class="card-title">Важно</div>
+                <ul class="list">
+                  <li>Перед подачей прочитайте устав</li>
+                  <li>Не скрывайте прошлые наказания</li>
+                  <li>Доказательства прикрепляйте ссылками</li>
+                </ul>
+                <a class="button button-ghost" href="/charter.html">Открыть устав</a>
+              </div>
+
+              <div class="card card-compact">
+                <div class="card-title">Куда отправляется?</div>
+                <div class="card-text">
+                  По умолчанию сайт работает в режиме копирования. Для авто-отправки нужен endpoint (например, ваш бот/вебхук).
+                </div>
+                <a class="button button-ghost" href="/contacts.html">Контакты</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <img class="brand-mark" src="/assets/logo.svg" alt="" />
+            <div>
+              <div class="footer-title">SASPA</div>
+              <div class="footer-sub">GTA 5 RP • Официальный сайт</div>
+            </div>
+          </div>
+          <div class="footer-meta">© <span data-slot="year"></span> SASPA.</div>
+        </div>
+        <div class="footer-links">
+          <div>Порядок начинается с дисциплины.</div>
+          <div>Служим закону — держим режим.</div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="authDialog" aria-label="Вход">
+      <form method="dialog" class="dialog-card" data-form="auth">
+        <div class="dialog-head">
+          <div class="dialog-title">Вход</div>
+          <button class="icon-button" type="submit" aria-label="Закрыть">
+            <span aria-hidden="true">✕</span>
+          </button>
+        </div>
+        <p class="muted">Доступ к редактированию сайта на этом устройстве. По умолчанию: admin / admin.</p>
+        <label class="field">
+          <span class="field-label">Логин</span>
+          <input class="input" name="username" autocomplete="username" />
+        </label>
+        <label class="field">
+          <span class="field-label">Пароль</span>
+          <input class="input" name="password" type="password" autocomplete="current-password" />
+        </label>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel" type="submit">Закрыть</button>
+          <button class="button button-primary" data-action="auth-login" type="button">Войти</button>
+        </div>
+        <div class="notice" data-slot="auth-result" hidden></div>
+      </form>
+    </dialog>
+
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>

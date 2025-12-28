@@ -1,0 +1,41 @@
+<svg width="720" height="340" viewBox="0 0 720 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ФТ «Болингброук» — вышки">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1426" />
+      <stop offset="1" stop-color="#121a30" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(59,130,246,0.28)" />
+      <stop offset="1" stop-color="rgba(34,197,94,0.18)" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(0,0,0,0.55)" />
+    </filter>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 0H22V22H0Z" fill="rgba(255,255,255,0.00)" />
+      <path d="M22 0H0V22" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#bg)" />
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#glow)" opacity="0.95" />
+
+  <path d="M0 260C120 220 250 242 340 268C430 294 560 300 720 242V340H0V260Z" fill="rgba(0,0,0,0.26)" />
+  <rect x="0" y="0" width="720" height="340" rx="20" fill="url(#grid)" opacity="0.85" />
+
+  <g filter="url(#shadow)">
+    <path d="M108 252V154L138 132L168 154V252H108Z" fill="rgba(0,0,0,0.30)" stroke="rgba(255,255,255,0.28)" stroke-width="2" />
+    <path d="M140 132V104" stroke="rgba(255,255,255,0.26)" stroke-width="2" stroke-linecap="round" />
+    <path d="M126 162H152" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" />
+
+    <path d="M300 252V146L332 120L364 146V252H300Z" fill="rgba(0,0,0,0.30)" stroke="rgba(255,255,255,0.28)" stroke-width="2" />
+    <path d="M332 120V92" stroke="rgba(255,255,255,0.26)" stroke-width="2" stroke-linecap="round" />
+    <path d="M318 156H346" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" />
+
+    <path d="M506 252V156L536 134L566 156V252H506Z" fill="rgba(0,0,0,0.30)" stroke="rgba(255,255,255,0.28)" stroke-width="2" />
+    <path d="M536 134V108" stroke="rgba(255,255,255,0.26)" stroke-width="2" stroke-linecap="round" />
+    <path d="M522 164H550" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" />
+
+    <path d="M86 252H634" stroke="rgba(255,255,255,0.24)" stroke-width="2" />
+  </g>
+</svg>
